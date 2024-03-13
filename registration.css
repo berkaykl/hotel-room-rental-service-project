@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap'); /*ince*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap'); /*kalin*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://cdn.discordapp.com/attachments/913942781498630157/1186042882067546163/7caf97fb2cd2e56494e055db557f8ffe.jpg?ex=6591cf82&is=657f5a82&hm=93ba3193fa4d8e78ebf93d5e3ad8ce3235f9980d0a99fb16b020d8efaf904fcb&);
+    -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+              font-family: 'Shippori Antique', sans-serif;
+              overflow-x: hidden;
+              display: flex;
+              flex-direction: column;
+              height: 100vh;
+
+}
+
+
+:root {
+    --registrationPageColor1: #110702;
+    --registrationPageColor2: #f1e8db;
+}
+
+
+
+/*NAVBAR*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--registrationPageColor1);
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--registrationPageColor2);
+    padding: 10px 10px;
+    border-bottom-left-radius: 75px;
+    overflow: hidden;
+}
+
+nav a {
+    color: var(--registrationPageColor1);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0 30px;
+}
+nav a:hover {
+    background-color: #fffaf5;
+}
+
+nav a:first-child {
+    margin-left: 30px;
+}
+
+.navbar-callme-button {
+    border: 1px solid var(--registrationPageColor1); 
+    border-radius: 25px;
+    padding: 11px;
+    flex-direction: row;
+}
+
+.navbar-callme-button i {
+    margin-right: 10px;
+}
+
+
+
+
+/* ANA SAYFA KAYIT OLMA BOLUMU */
+.registration-container {
+    position: absolute;
+    bottom: 130px;
+    left: 50px;
+    padding: 15px 30px;
+    background-color: var(--registrationPageColor2);
+    border-radius: 10px;
+    z-index: 1;
+    max-width: 900px;
+}
+
+.registration-container h2 {
+    margin: 0;
+}
+
+.registration-main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 8px 0;
+}
+
+.registration-input-box {
+    width: calc(100% / 2 - 15px);
+    margin: 15px 0;
+}
+
+.registration-input {
+    width: calc(100% - 20px);
+    height: 38px;
+    border: 1px solid white;
+    outline: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: 200ms all;
+}
+
+
+.registration-input:hover {
+    border: 1px solid var(--registrationPageColor1);
+}
+
+.registration-input[type="submit"] {
+    border: none;
+    color: white;
+    background-color: var(--registrationPageColor1);
+    opacity: 1;
+    transition: 200ms opacity;
+}
+
+.registration-input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--registrationPageColor1);
+    opacity: 0.9;
+}
+
+.uyelik-varsa-giris-container {
+    text-align: center;
+}
+
+
+.uyelik-varsa-giris-container span a {
+    color: var(--registrationPageColor1);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* ANA SAYFA FOOTER */
+.registration-footer {
+    background-color: var(--registrationPageColor1);
+    color: var(--registrationPageColor2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 260px;
+    box-sizing: border-box;
+    /* transform: translateZ(0); */
+    contain: content;
+}
+
+
+.registration-footer-otel-features {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--registrationPageColor2);
+    color: var(--registrationPageColor1);
+}
+
+.registration-footer p {
+    position: relative;
+/*     left: 200px;
+    bottom: 200px; */
+}
+
+.registration-footer-otel-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.registration-footer-contactus-container {
+    position: absolute;
+    width: 450px;
+    right: 50px;
+}
+
+
+.registration-footer-contactus-container h1{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.registration-footer-contactus-section {
+   display: flex;
+   flex-direction: column; 
+}
+
+.registration-footer-contactus-section p {
+    font-size: 15px;
+}
+
+.contact-us-tr-flage{
+    width: 80px;
+    margin-right: 20px;
+}
+
+.registration-footer-contactus-section-number {
+    display: flex;
+    flex-direction: row;
+}
+
+.kucukResim {
+    display: none;
+}
+.kucukResim img {
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+
+    body {
+        background: none;
+        background-color: var(--registrationPageColor1);
+        min-width: 450px;
+    }
+
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo {
+        margin: 15px 0 15px 0;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    nav a:first-child {
+        margin-left: 0;
+    }
+
+    header nav a {
+        flex-direction: row;
+        padding: 10px 30px;
+    }
+
+    header nav a i {
+        margin-right: 10px;
+    }
+
+    .kucukResim {
+        display: block;
+    }
+
+    .registration-container {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: none;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .registration-footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .registration-footer-contactus-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        right: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .registration-footer-otel-features {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .registration-footer-otel-feature {
+        width: 40%;
+    }
+}

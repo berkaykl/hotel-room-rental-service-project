@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap'); /*ince*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap'); /*kalin*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Shippori Antique', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
+:root {
+    --registrationPageColor1: #110702;
+    --registrationPageColor2: #f1e8db;
+}
+
+
+.adminPanel-sidenav {
+    width: 25%;
+    min-width: 200px;
+    position: relative;
+    height: 100%;
+    max-width: 500px;
+    z-index: 1;
+    background-color: var(--registrationPageColor1);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    contain: content;
+}
+
+.adminPanel-sidenav img {
+    width: 30%;
+    max-width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+.adminPanel-sidenav a {
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--registrationPageColor2);
+    display: block;
+    border-bottom: 1px solid var(--registrationPageColor2);
+    transition: 100ms background;
+}
+
+
+.adminPanel-sidenav a:hover {
+    background-color: #241006;
+}
+
+.adminPanel-sidenav a i {
+    font-size: 18px;
+    margin-right: 15px;
+}
+  
+#adminPanel-cikis {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 15px 0 15px 25px;
+    background-color: rgb(83, 17, 17);
+}
+#adminPanel-cikis:hover {
+    background-color: rgb(97, 19, 19);
+}
+#toggle-sidenav-container {
+    display: none;
+    position: fixed;
+    padding: 10px 15px;
+    background-color: var(--registrationPageColor2);
+    color: var(--registrationPageColor1);
+    font-size: 22px;
+    opacity: 0.8;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+#toggle-sidenav-container:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+
+
+
+.adminPanel-main {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--registrationPageColor2);
+}
+  
+.adminPanel-content {
+    width: 96%;
+    padding: 30px 50px; 
+    display: none;
+}
+
+.adminPanel-main h1 {
+    font-size: 35px;
+}
+
+.adminPanel-main p {
+    font-size: 18px;
+}
+
+
+
+/* admin paneli otel bilgileri kodlari */
+
+.adminPanel-content-otelBilgileri-form-container {
+    margin-top: 40px;
+}
+.adminPanel-content-otelBilgileri-item {
+    margin-bottom: 25px;
+}
+.adminPanel-content-otelBilgileri-item p {
+    margin: 0;
+    font-size: 19px;
+}
+.adminPanel-content-otelBilgileri-item input {
+    width: 50%;
+    height: 40px;
+    border: 1px solid white;
+    outline: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: 200ms all;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.adminPanel-content-otelBilgileri-item input:hover {
+    border: 1px solid var(--registrationPageColor1);
+}
+.adminPanel-content-otelBilgileri-item input[type="submit"] {
+    border: 1px solid white;
+    background-color: rgb(7, 87, 7);
+    color: white;
+}
+.adminPanel-content-otelBilgileri-item input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(10, 105, 10);
+}
+
+
+
+
+.adminPanel-content-kayitliListesi-container {
+    margin-top: 40px;
+    width: 98%;
+}
+.adminPanel-kayitliListesi-satir {
+    display: flex;
+    flex-direction: row;
+}
+.adminPanel-kayitliListesi-satir-titles {
+    background-color: var(--registrationPageColor1);
+    color: var(--registrationPageColor2);
+}
+.adminPanel-kayitliListesi-satir-sutun {
+    width: 16%;
+    border: 1px solid white;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+.adminPanel-content-kayitliListesi-background-renk {
+    background-color: #fffaf5;
+}
+
+.adminPanel-kayitliListesi-satir-sutun.kullaniciId {
+    width:10%;
+}
+.adminPanel-kayitliListesi-satir-sutun.kullaniciIsim {
+    width: 17%;
+}
+.adminPanel-kayitliListesi-satir-sutun.kullaniciEmail {
+    width: 28%;
+}
+.adminPanel-kayitliListesi-satir-sutun.kullaniciTelno {
+    width: 19%;
+}
+.adminPanel-kayitliListesi-satir-sutun.kullaniciDogumtarihi {
+    width: 13%;
+}
+.adminPanel-kayitliListesi-satir-sutun.kullaniciKayittarihi {
+    width: 13%;
+}
+
+
+.adminPanel-kayitliListesi-satir-sutun.musteriId, .adminPanel-kayitliListesi-satir-sutun.musteriKullaniciId  {
+    width: 11%;
+}
+.adminPanel-kayitliListesi-satir-sutun.musteriIsim {
+    width: 26%;
+}
+.adminPanel-kayitliListesi-satir-sutun.musteriTelno {
+    width: 24%;
+}
+.adminPanel-kayitliListesi-satir-sutun.musteriOdano {
+    width: 11%;
+}
+.adminPanel-kayitliListesi-satir-sutun.musteriKayitTarihi {
+    width: 17%;
+}
+
+
+.adminPanel-kayitliListesi-satir-sutun.odaId {
+    width: 5%;
+}
+.adminPanel-kayitliListesi-satir-sutun.odaIsim  {
+    width: 21%;
+}
+.adminPanel-kayitliListesi-satir-sutun.odaAdres {
+    width: 31%;
+}
+.adminPanel-kayitliListesi-satir-sutun.odaDegerlendirme {
+    width: 11%;
+}
+.adminPanel-kayitliListesi-satir-sutun.odaOylama {
+    width: 11%;
+}
+.adminPanel-kayitliListesi-satir-sutun.odaFiyat {
+    width: 11%;
+}
+.adminPanel-kayitliListesi-satir-sutun.odaIslem {
+    width: 10%;
+}
+
+.odaSilSutun {
+    padding: 0;
+    width: calc(10% + 10px) !important;
+}
+.odaSilSutun form {
+    width: 100%;
+    height: 100%;
+}
+
+.adminPanel-kayitliListesi-satir-sutun.odaIslem input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: red;
+    font-size: 18px;
+}
+.adminPanel-kayitliListesi-satir-sutun.odaIslem input:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* otel odası ekleme */
+
+.adminPanel-content-kiralikOdalar-form-container {
+    margin-top: 40px;
+}
+
+.adminPanel-content-kiralikOdalar-form-item {
+    margin-bottom: 25px;
+}
+
+.adminPanel-content-kiralikOdalar-form-item p {
+    margin: 0;
+    font-size: 19px;
+}
+.adminPanel-content-kiralikOdalar-form-item input {
+    width: 50%;
+    height: 40px;
+    border: 1px solid white;
+    outline: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: 200ms all;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.adminPanel-content-kiralikOdalar-odaEkle {
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: 200ms all;
+    margin-top: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    background-color: rgb(7, 87, 7);
+    color: white;
+}
+.adminPanel-content-kiralikOdalar-odaEkle:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 50%;
+    height: 40px;
+    border: 1px solid white;
+    outline: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 15px;
+    resize: vertical;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+
+
+#kayitGoster h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+#kayitGoster h3 span {
+    padding: 2px 5px;
+    background-color: var(--registrationPageColor1);
+    color: var(--registrationPageColor2);
+}
+
+
+
+
+
+
+
+
+
+
+  
+@media screen and (max-width: 1200px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .adminPanel-main {
+        height: 100%;
+    }
+
+    .adminPanel-sidenav {
+        min-width: 100%; 
+        height: auto;
+        min-height: 408px;
+    }
+
+    .adminPanel-sidenav img {
+        display: none;
+    }
+
+    .adminPanel-sidenav a {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .adminPanel-sidenav a i {
+        margin-top: 3px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .adminPanel-content {
+        width: 85%;
+        padding: 30px 30px; 
+    }
+
+    #adminPanel-cikis {
+        position: relative;
+    }
+
+    .adminPanel-content-otelBilgileri-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adminPanel-content-otelBilgileri-item {
+        width: 100%;
+    }
+
+    .adminPanel-content-otelBilgileri-item input {
+        width: 100% ;
+    }
+
+
+    .adminPanel-content-kayitliListesi-container {
+        width: 105%;
+    }
+    .adminPanel-kayitliListesi-satir-sutun span, .adminPanel-kayitliListesi-satir span{
+        font-size: 14px;
+    }
+    .adminPanel-kayitliListesi-satir-sutun , .adminPanel-kayitliListesi-satir {
+        padding-left: 0;
+    }
+
+
+    #toggle-sidenav-container {
+        display: block;
+    }
+
+
+    .odaSilSutun {
+        padding: 0;
+        width: 10% !important;
+    }
+
+}
+

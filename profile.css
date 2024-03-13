@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap'); /*ince*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap'); /*kalin*/
+
+:root {
+    --registrationPageColor1: #110702;
+    --registrationPageColor2: #f1e8db;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--registrationPageColor1);
+    color: white;
+    z-index: 999;
+    top: 0 !important;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--registrationPageColor2);
+    padding: 10px 10px;
+    border-bottom-left-radius: 75px;
+    overflow: hidden;
+}
+
+nav a {
+    color: var(--registrationPageColor1);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0 30px;
+}
+nav a:hover {
+    background-color: #fffaf5;
+}
+
+nav a:first-child {
+    margin-left: 30px;
+}
+
+
+
+
+/*rooms*/
+.odaKirala-search-container {
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.odaKirala-search-container img {
+    width: 100%;
+    max-height: 750px;
+}
+
+.odaKirala-search-main {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.odaKirala-search-input-container h1 {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-top: -40px;
+    opacity: 0.95;
+}
+
+.odaKirala-search-input-container {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 30px;
+    margin: 0 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.odaKirala-search-input-konum-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50px;
+    color: red;
+    font-size: 20px;
+}
+.odaKirala-search-input-search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+.odaKirala-search-input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+
+.odaKirala-otel-features-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--registrationPageColor2);
+}
+.odaKirala-otel-feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--registrationPageColor2);
+    color: var(--registrationPageColor1);
+}
+
+
+.odaKirala-section-container {
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.odaKirala-oda-item {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 12px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.odaKirala-oda-image-container {
+    position: relative;
+    height: 100%;
+    width: 400px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.odaKirala-oda-image-container img {
+    width: 150%;
+    height: 100%;
+}
+.odaKirala-oda-bilgileri-container {
+    display: flex;
+    flex-direction: column
+}
+.odaKirala-oda-bilgileri-odaIsmi {
+    margin: 0;
+    font-size: 23px;
+    color: var(--registrationPageColor1);
+}
+.odaKirala-oda-bilgileri-adres {
+    font-size: 15px;
+    text-decoration: underline;
+}
+.odaKirala-oda-bilgileri-aciklama {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.odaKirala-oda-degerlendirme-container {
+    display: flex;
+    flex-direction: column;
+}
+.odaKirala-oda-degerlendirme {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.odaKirala-oda-degerlendirme-container h1 {
+    color: var(--registrationPageColor1);
+    font-size: 16px;
+    margin: 0;
+}
+.odaKirala-oda-degerlendirme-container span {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+}
+
+.odaKirala-oda-degerlendirmeOrtalama-kutusu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003580;
+    color: white;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+.odaKirala-oda-satinAl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 9px;
+    background-color: #0071c1;
+    color: white;
+    border-radius: 3px;
+    margin-top: 15px;
+    border: none;
+    font-family: 'Shippori Antique', sans-serif;
+    float: right;
+}
+.odaKirala-oda-satinAl:hover {
+    cursor: pointer;
+}
+
+.odaKirala-oda-satinAl i {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* PROFILE PHP  */
+.profil-bilgileri-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 25px;
+    background-color: var(--registrationPageColor1);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profil-bilgileri-resim-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil-bilgileri-resim-container img {
+    border-radius: 50%;
+}
+
+.profil-bilgileri-isim-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.profil-bilgileri-isim-container-isim {
+    font-size: 20px;
+    color: var(--registrationPageColor2);
+}
+.profil-bilgileri-isim-container-musteri {
+    font-size: 15px;
+    color: var(--registrationPageColor2);
+    opacity: 0.7;
+}
+
+.profil-cikisYap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    /* padding: 8px; */
+    padding: 7px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Shippori Antique', sans-serif;
+    width: 100%;
+}
+
+.profile-istekOneriSikayet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0071c1;
+    color: white;
+    border-radius: 4px; 
+    padding: 7px;
+    font-size: 15px;
+}
+.profil-cikisYap:hover, .profile-istekOneriSikayet:hover {
+    cursor: pointer;
+}
+
+
+
+
+.profil-bilgileri-odaBilgileri {
+    margin-left: 25px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profil-odalar-bilgiler-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(85% + 50px);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.profil-bilgileri-kiralanan-odalar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.kiraladigin-odalar-liste-baslik {
+    text-decoration: underline;
+    color: var(--registrationPageColor1);
+    font-size: 23px;
+}
+
+.profil-bilgileri-right-section-container {
+    background-color: var(--registrationPageColor1);
+    padding: 20px;
+    border-radius: 4px;
+    width: 280px;
+    min-width: 280px;
+    height: 100%;
+}
+
+.profil-bilgileri-right-section-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.profil-bilgileri-right-section-container ul li {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profil-bilgileri-right-section-container ul li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.profil-bilgileri-right-section-container .bilgiTitle{
+    font-size: 13px;
+    color: var(--registrationPageColor2);
+    opacity: 0.7;
+}
+.profil-bilgileri-right-section-container .bilgiValue {
+    font-size: 17px;
+    color: var(--registrationPageColor2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .logo {
+        margin: 15px 0 15px 0;
+    }
+    
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    nav a:first-child {
+        margin-left: 0;
+    }
+    
+    header nav a {
+        flex-direction: row;
+        padding: 10px 30px;
+    }
+    
+    header nav a i {
+        margin-right: 10px;
+    }
+
+
+
+    .profil-bilgileri-container {
+        margin-top: 260px;
+    }
+    .profil-bilgileri-kiralanan-odalar {
+        margin: 0;
+    }
+    .profil-odalar-bilgiler-container {
+        width: calc(85% + 20px);
+    }
+    .profil-bilgileri-right-section-container {
+        display: none;
+    }
+
+
+    .odaKirala-search-container {
+        margin-top: 260px;
+    }
+
+    .odaKirala-search-main {
+        top: 50%;
+    }
+}
